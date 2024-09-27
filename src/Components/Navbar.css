@@ -9,10 +9,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #0f172a;
-    position: sticky;
+
     top: 0;
     font-family: cursive;
     font-size: 18px;
+    width: auto%;
+    padding: 0px 30px 0px 30px;
+    position: relative;
 }
 nav .title{
     font-size: 1.5rem;
@@ -68,6 +71,17 @@ nav button{
 }
 
 @media(max-width:600px){
+    nav{
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+    nav link{
+        font-size: 32px;
+    }
     nav .menu{
         display: flex;
     }
@@ -76,19 +90,22 @@ nav button{
         align-items: start;
     }
     nav ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 0.25rem;
+        display:none;
+  
     }
     nav ul.open{
         display: flex;
+        padding: 10px;
     }
     nav ul li{
-        width: 100%;
-        text-align: center;
+        text-align: start;
+        font-size: 12px;
+        list-style: none;
     }
-    nav ul li a{
+    /* nav ul li a{
         margin: 0.2rem 0.5rem;
-    }
+    } */
+     nav button{
+        font-size: 12px;
+     }
 }

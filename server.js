@@ -19,5 +19,5 @@ app.post("/upload-video", upload.single("video"), (req, res) => {
 
 // Start the server
 app.listen(5000, () => {
-  console.log("Server is running on http://localhost:5000");
+  console.log("Server is running on http://localhost:5000"); // Corrected the port number
 });

@@ -83,7 +83,7 @@ const Home = () => {
   return (
     <div>
       {/* hero section */}
-      <div className="hero container">
+      <div className="hero">
         <div className="heroText">
           <h1>Transform Your Home Workouts with Instant Posture Feedback</h1>
           <p>
@@ -151,7 +151,7 @@ const Home = () => {
               precision to maximize results and minimize injury. Join us on a
               journey to safer, smarter workouts, wherever you are.
             </p>
-            <button className="btnA" onClick={handleNavigateAbout}>Learn More</button>
+            <button className="btn" onClick={handleNavigateAbout}>Learn More</button>
           </div>
         </div>
       </div>

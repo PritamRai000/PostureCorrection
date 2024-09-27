@@ -5,6 +5,9 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import "../../Home.css";
+
+
 
 const Triceps = () => {
   const navigate = useNavigate();
@@ -12,6 +15,15 @@ const Triceps = () => {
   const navigateBack = useNavigate();
   const handleNavigateBack = () => {
     navigate("/backlist");
+  };
+  const navigatePrivacy = useNavigate();
+  const handleNavigatePrivacy = () => {
+    navigate('/PrivacyPolicy'); 
+  };
+
+  const navigateTerms = useNavigate();
+  const handleNavigateTerms = () => {
+    navigate('/TermsAndServices'); 
   };
 
   const [videoFile, setVideoFile] = useState(null);
@@ -72,36 +84,38 @@ const Triceps = () => {
           <h1>Triceps Dips</h1>
           <h2>Instructions</h2>
           <p>
-            To perform diamond push-ups, start in a plank position with your
-            hands placed close together beneath your chest, forming a diamond
-            shape with your thumbs and index fingers touching. Your feet should
-            be about hip-width apart, and your body should form a straight line
-            from your head to your heels. Engage your core and keep your body
-            stable as you lower yourself by bending your elbows, keeping them
-            close to your body. Lower until your chest nearly touches your
-            hands. Push through your palms to extend your arms and return to the
-            starting position. Inhale as you lower yourself and exhale as you
-            push back up. Repeat for the desired number of repetitions.
+          To perform triceps dips, start by sitting on the edge of a sturdy bench or chair, placing your hands next to your hips with fingers pointing forward. Slide your buttocks off the edge, supporting your weight with your arms while keeping your legs extended in front of you. Engage your core and keep your shoulders down and back. Lower your body by bending your elbows, keeping them close to your sides, until your upper arms are parallel to the ground or slightly below. Pause for a moment at the bottom, then push through your palms to return to the starting position, fully extending your arms. Aim for 3 sets of 8-12 reps, adjusting as necessary based on your fitness level.
           </p>
           <h2>Steps</h2>
           <p>
-            Start: Begin in a pushup position, hands under your chest forming a
-            diamond with thumbs and index fingers. Keep your body straight, core
-            tight.
-            <br />
-            Lower: Bend elbows, lowering your chest towards the diamond shape.
-            Keep elbows close to your body.
-            <br />
-            Push: Push back up to the start position, keeping your core engaged.
-            <br />
-            Reps: Start with 3 sets of 8-12 reps, adjusting as needed.
+          -Position Yourself:
+Sit on the edge of a sturdy bench or chair, placing your hands next to your hips with fingers pointing forward. <br /> 
+
+-Support Your Weight:
+Slide your buttocks off the edge, supporting your weight with your arms while keeping your legs extended in front of you. <br />
+
+-Engage Your Core:
+Tighten your core and keep your shoulders down and back throughout the movement. <br />
+
+-Lower Your Body:
+Bend your elbows, lowering your body while keeping your elbows close to your sides until your upper arms are parallel to the ground or slightly below. <br />
+
+-Pause:
+Hold the position briefly at the bottom of the movement. <br />
+
+-Push Up:
+Press through your palms to return to the starting position, fully extending your arms. <br />
+
+-Reps:
+Aim for 3 sets of 8-12 reps, adjusting as necessary based on your fitness level. <br />
           </p>
           <h2>Focus Area:</h2>
           <p>
-            -Triceps (back of the arms) <br />
-            -Pectoral muscles (chest) <br />
-            -Deltoids (shoulders) <br />
-            -Core muscles (to maintain stability)
+          -Triceps: Primarily targets the triceps for strength and definition. <br />
+-Chest: Engages the pectoral muscles for additional upper body development. <br />
+-Shoulders: Activates the deltoid muscles for stability and strength. <br />
+-Core: Engages the abdominal muscles for stability during the movement. <br />
+-Wrist Stability: Helps improve wrist strength and stability, beneficial for other upper body exercises. <br />
           </p>
           {/* <button className="btn">Get Report</button> */}
           <form onSubmit={handleUpload} className="uploadForm">
@@ -116,6 +130,14 @@ const Triceps = () => {
             </button>
           </form>
         </div>
+      </div>
+      {/*footer section*/}
+      <div className="footer">
+        <p>Copyright © 2024. PostureCorrector</p>
+        <ul>
+          <li onClick={handleNavigateTerms}>Terms of Service</li>
+          <li onClick={handleNavigatePrivacy}>Privacy Policy</li>
+        </ul>
       </div>
     </div>
   );

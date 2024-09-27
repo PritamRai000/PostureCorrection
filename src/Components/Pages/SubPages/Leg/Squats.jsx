@@ -5,12 +5,23 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import "../../Home.css";
+
 
 const Squats = () => {
   const navigate = useNavigate();
   const navigateLeg = useNavigate();
   const handleNavigateLeg = () => {
     navigate("/leglist");
+  };
+  const navigatePrivacy = useNavigate();
+  const handleNavigatePrivacy = () => {
+    navigate('/PrivacyPolicy'); 
+  };
+
+  const navigateTerms = useNavigate();
+  const handleNavigateTerms = () => {
+    navigate('/TermsAndServices'); 
   };
 
   const [videoFile, setVideoFile] = useState(null);
@@ -70,36 +81,32 @@ const Squats = () => {
           <h1>Squats</h1>
           <h2>Instructions</h2>
           <p>
-            To perform diamond push-ups, start in a plank position with your
-            hands placed close together beneath your chest, forming a diamond
-            shape with your thumbs and index fingers touching. Your feet should
-            be about hip-width apart, and your body should form a straight line
-            from your head to your heels. Engage your core and keep your body
-            stable as you lower yourself by bending your elbows, keeping them
-            close to your body. Lower until your chest nearly touches your
-            hands. Push through your palms to extend your arms and return to the
-            starting position. Inhale as you lower yourself and exhale as you
-            push back up. Repeat for the desired number of repetitions.
+          To perform squats, begin by standing with your feet shoulder-width apart and your toes slightly pointed out. Engage your core muscles to maintain stability throughout the movement. Lower your body by bending your knees and pushing your hips back as if sitting in a chair, ensuring your chest remains up and your back stays straight. Aim to lower your thighs until they are parallel to the ground or as low as comfortable, pausing briefly at the lowest point to ensure your knees are aligned with your toes. Press through your heels to return to the starting position, keeping your core engaged and chest up. Start with 3 sets of 10-15 reps, adjusting as needed based on your fitness level.
           </p>
           <h2>Steps</h2>
           <p>
-            Start: Begin in a pushup position, hands under your chest forming a
-            diamond with thumbs and index fingers. Keep your body straight, core
-            tight.
-            <br />
-            Lower: Bend elbows, lowering your chest towards the diamond shape.
-            Keep elbows close to your body.
-            <br />
-            Push: Push back up to the start position, keeping your core engaged.
-            <br />
-            Reps: Start with 3 sets of 8-12 reps, adjusting as needed.
+          -Stand:
+Begin by standing with your feet shoulder-width apart, toes slightly pointed out. <br />
+
+-Engage Your Core:
+Tighten your core muscles to maintain stability throughout the movement. <br />
+
+-Lower:
+Bend your knees and push your hips back as if sitting in a chair. Keep your chest up and back straight. Lower until your thighs are parallel to the ground or as low as comfortable. <br />
+
+-Push Up:
+Press through your heels to return to the starting position, keeping your core engaged and chest up. <br />
+
+-Reps:
+Start with 3 sets of 10-15 reps, adjusting as needed based on your fitness level. <br />
           </p>
           <h2>Focus Area:</h2>
           <p>
-            -Triceps (back of the arms) <br />
-            -Pectoral muscles (chest) <br />
-            -Deltoids (shoulders) <br />
-            -Core muscles (to maintain stability)
+          -Quadriceps: Primarily targets the front thigh muscles. <br />
+-Hamstrings: Engages the muscles at the back of the thighs for balance. <br />
+-Glutes: Strengthens the gluteal muscles for improved lower body power. <br />
+-Core: Activates the abdominal muscles for stability and posture. <br />
+-Lower Back: Promotes strength in the lower back for overall support. <br />
           </p>
 
           {/* <button className="btn">Get Report</button> */}
@@ -115,6 +122,14 @@ const Squats = () => {
             </button>
           </form>
         </div>
+      </div>
+      {/*footer section*/}
+      <div className="footer">
+        <p>Copyright © 2024. PostureCorrector</p>
+        <ul>
+          <li onClick={handleNavigateTerms}>Terms of Service</li>
+          <li onClick={handleNavigatePrivacy}>Privacy Policy</li>
+        </ul>
       </div>
     </div>
   );

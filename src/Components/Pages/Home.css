@@ -76,11 +76,11 @@
     margin-right: 30px;
     display: block;
 }
- .program{
+.program{
     flex-basis: 31%;
     position:relative;
 } 
- .caption{
+.caption{
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 5px;
@@ -99,32 +99,46 @@
     opacity: 0;
     padding-top: 70%;
     transition: 0.4s;
- }
- .program:hover .caption{
+}
+.program:hover .caption{
     opacity: 1;
     padding-top: 0;
- }
+}
 
- /* .chestImg{
+/* .chestImg{
     width: 80%;
     width: 500px;
     height: 300px;
- } */
-
- /*about*/
- .aboutSection h1{
-    font-family:cursive ;
-    text-align: center;
- }
+    } */
+    
+    /*about*/
+    .aboutSection h1{
+        font-family:cursive ;
+        text-align: center;
+    }
  .about{
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    background: rgb(213, 210, 210);
-    padding: 5%;
-}
+     margin: 20px auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 90%;
+     background: rgb(213, 210, 210);
+     padding: 5%;
+    }
+    .aboutPage{
+        padding-left: 5%;
+    padding-right: 5%;
+    }
+    .aboutPage p{
+        font-size: 20px;
+        font-family: sans-serif;
+        text-align: justify;
+    }
+    .aboutPage h2{
+        font-size: 32px;
+        font-family: sans-serif;
+        text-align: center;
+    }
 .about-left{
     flex-basis: 40%;
 }
@@ -181,14 +195,14 @@
 }
 
 .firstCol{
-   
+    
     justify-content: space-around;
 }
 .contact svg {
     width:25px;
     height: 25px; 
     margin-right: 20px;
-   
+    
 }
 
 .email{
@@ -260,7 +274,7 @@
     border: 1px solid rgb(230, 213, 213);;
     padding: 10px ;
     border-radius: 15px;
-   
+    
 }
 .contact form input, .contact form textarea{
     width: 95%;
@@ -289,7 +303,8 @@
     border:2px solid rgb(230, 213, 213);
 }
 .btn:hover{
-    background-color: #d2d2d2;
+    background-color: #fb7070;
+    color: white;
 }
 form{
     box-shadow: 8px 8px 20px  rgb(159, 158, 158);
@@ -317,4 +332,185 @@ form{
     display: inline-block;
     margin-right: 40px;
     color: #fff;
+}
+@media (max-width:600px){
+    .footer{ 
+        width: 100%;
+        display: flex;
+    }
+    .footer p{
+        font-size: 8px;
+        
+    }
+    .footer ul li{
+        font-size: 6px;
+        
+    }
+}
+
+/*responsive*/
+@media (max-width:600px){
+    .hero {
+        background-size:contain;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        
+    }
+    .hero h1{
+        font-size: 24px;
+        padding: 0px 20px 0px 20px;
+        
+    }
+    .hero p{
+        font-size: 16px;
+        text-align: center;
+        padding:0px 20px 0px 20px;
+    }
+    .hero button{
+        font-size: 16px;
+        padding: 5px 5px 5px 5px;
+        width: 150px;
+    }
+
+    .programSection{
+        max-width: 600px;
+        position: relative;
+    }
+    .programSection h1{
+        font-size: 24px;
+    }
+    .programSection h3{
+        font-size: 14px;
+    }
+    .programs{
+        height: 200px;
+        display: flex;
+    }
+    .program{
+        margin: 0;
+    }
+    .program img{
+        width: 250px;
+        height: 150px;
+        
+    }
+    .caption{
+    border-radius: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    position: absolute;
+    top:10px ; 
+    background: rgba(18, 18, 18, 0.5);
+    color: white;
+    cursor: pointer;
+    /* align-items: center;
+    justify-content: center; */
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.4s;
+    }
+    .program:hover .caption{
+        opacity: 1;
+        padding-top: 0;
+    }
+
+    .aboutSection{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin: 0%;
+    }
+    .aboutSection h1{
+        font-size: 24px;
+    }
+    .about-right h2{
+        font-size: 16px;
+    }
+    .about-right p{
+        font-size: 12px;
+    }
+    .btnA{
+        font-size: 12px;
+        padding: 6px 8px 6px 8px;
+    }
+    .about-left img{
+        width: 250px;
+        height: 200px;
+    }
+    .about{
+        padding: 5px 10px 5px 10px;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .contactSection{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactSection h1{
+        font-size: 24px;
+    }
+    .contact{
+        display: flex;
+        padding: 0%;
+        margin: 0%;
+        padding-bottom: 10px;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    .contact h3{
+        font-size: 14px;
+    }
+    .contact a,p{
+        font-size: 12px;
+    }
+    .emailIcon{
+        width: 10px;
+        height: 10px;
+    }
+    .phoneIcon{
+        width: 10px;
+        height: 10px;
+    }
+    .instaIcon{
+        width: 10px;
+        height: 10px;
+    }
+    .whatsappIcon{
+        width: 10px;
+        height: 10px;
+    }
+    .facebookIcon{
+        width: 10px;
+        height: 10px;
+    }
+    .insta .whatsapp .phone .email .facebook{
+        display: flexbox;
+    }
+    .secondCol{
+        width: 300px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .firstCol{
+        width: 200px;
+        margin-left: 5%;
+    }
+    .secondCol label,::placeholder{
+        font-size: 12px;
+    }
+    .secondCol .btn{
+        font-size: 12px;
+        padding: 6px 12px 6px 12px;
+        margin: 0%;
+    }
+    .secondCol form{
+        padding: 10px;
+    }
+    .footer{
+        width: 100%;
+    }
 }

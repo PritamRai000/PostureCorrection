@@ -25,7 +25,7 @@ const ChestLists = () => {
         <IoArrowBackCircleOutline className='backBtn' onClick={handleNavigateChest}/>
         <img src={chest} alt="" />
         <h2>Chest Exercises</h2>
-        <p>Strengthen your arms and improve muscle endurance with targeted exercises that also enhance your posture. Our guided arm workouts help you achieve proper form, ensuring maximum results while minimizing the risk of injury. Perfect for all fitness levels, each routine focuses on posture correction to promote better overall body alignment.</p>
+        <p>Developing a strong chest is crucial for enhancing upper body strength, improving posture, and supporting overall functional fitness. Our chest workout routines are designed to target the pectoral muscles while also engaging the shoulders and triceps for a balanced, full-body approach. Each exercise emphasizes proper form to ensure muscle activation and prevent injury. Whether your goal is to build muscle, increase endurance, or correct posture, these chest workouts will help you achieve a powerful, well-defined upper body.</p>
       </div>
 
       <div className="exerciseRow2">

@@ -24,7 +24,7 @@ const LegLists = () => {
         <IoArrowBackCircleOutline className='backBtn' onClick={handleNavigateLeg}/>
         <img src={leg} alt="" />
         <h2>Leg Exercises</h2>
-        <p>Strengthen your arms and improve muscle endurance with targeted exercises that also enhance your posture. Our guided arm workouts help you achieve proper form, ensuring maximum results while minimizing the risk of injury. Perfect for all fitness levels, each routine focuses on posture correction to promote better overall body alignment.</p>
+        <p>Building strong legs is essential for overall body strength, stability, and endurance. Our leg workout routines focus on key muscle groups including the quadriceps, hamstrings, glutes, and calves, ensuring balanced development and improved lower body mobility. Each exercise is designed with proper posture and form in mind, helping you avoid common mistakes that lead to injury. Whether your goal is to enhance athletic performance or simply improve day-to-day movement, these leg workouts will help you build strength, power, and stability from the ground up.</p>
       </div>
 
       <div className="exerciseRow2">

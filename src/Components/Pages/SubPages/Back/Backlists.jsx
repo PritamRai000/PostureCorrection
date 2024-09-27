@@ -25,7 +25,7 @@ const Backlists = () => {
         <IoArrowBackCircleOutline className='backBtn' onClick={handleNavigateBack}/>
         <img src={back} alt="" />
         <h2>Back Exercises</h2>
-        <p>Strengthen your arms and improve muscle endurance with targeted exercises that also enhance your posture. Our guided arm workouts help you achieve proper form, ensuring maximum results while minimizing the risk of injury. Perfect for all fitness levels, each routine focuses on posture correction to promote better overall body alignment.</p>
+        <p>A strong back is essential for maintaining proper posture, reducing the risk of injury, and supporting overall body strength. Our back workout routines target key muscles like the lats, traps, and lower back to help you build a well-rounded, resilient back. With an emphasis on correct form and posture, these exercises are designed to improve your stability, enhance your performance in other workouts, and alleviate any back discomfort caused by poor alignment. Whether you're looking to build muscle or improve posture, these workouts will help you achieve a stronger, healthier back.</p>
       </div>
 
       <div className="exerciseRow2">

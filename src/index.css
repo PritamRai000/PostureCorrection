@@ -1,21 +1,39 @@
 .terms{
-  font-family: cursive;
-  color: #4a4a4a;
+  font-family: sans-serif;
+  color: #000000;
+  
 }
 .terms h1{
   text-align: center;
 }
+.termContent{
+  padding: 0% 5% 0% 5%;
+}
 .termContent h2{
-  text-align: center;
+  text-align: start;
 }
 .termContent p{
-  text-align: center;
+  text-align: justify;
+  font-size: 20px;
 }
 .aboutPage{
+  margin: 0px 30px 0px 30px;
   display: grid;
   font-family: cursive;
 }
-
+@media (max-width:600px){
+  .aboutPage{
+    width: 100%;
+  }
+  .aboutPage h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .aboutPage p{
+    font-size: 12px;
+    margin-top: -25px;
+  }
+}
 
 /*exercisePageCSS*/
 .ex{
@@ -42,8 +60,8 @@
   display: grid;
 }
 .exercise img{
-  width: 100%;
-  height: 300px;
+  width: 50%;
+  height:auto;
   border-radius: 10px;
   margin-right: 10px;
 }

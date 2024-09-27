@@ -20,6 +20,8 @@ import Squats from "./Components/Pages/SubPages/Leg/Squats";
 import Triceps from "./Components/Pages/SubPages/Back/Triceps";
 import KneePushups from "./Components/Pages/SubPages/Chest/KneePushups";
 import Login from "./Components/Pages/Login";
+import Plank from "./Components/Pages/SubPages/Abs/Plank";
+import AbsList from "./Components/Pages/SubPages/Abs/AbsList";
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
       <Navbar />
       {/* <Home/> */}
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/exercise" element={<Exercises />} />
@@ -41,6 +44,10 @@ const App = () => {
         <Route path="/dumbell" element={<LateralRaises />} />
         <Route path="/squat" element={<Squats />} />
         <Route path="/tricepdips" element={<Triceps />} />
+        <Route path="/plank" element={<Plank />} />
+        <Route path="/abslist" element={<AbsList />} />
+
+
         <Route path="/knee" element={<KneePushups />} />
         <Route path="/login" element={<Login />} />
 

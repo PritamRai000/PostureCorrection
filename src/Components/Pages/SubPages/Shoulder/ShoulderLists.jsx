@@ -24,7 +24,7 @@ const ShoulderLists = () => {
         <IoArrowBackCircleOutline className='backBtn' onClick={handleNavigateShoulder}/>
         <img src={shoulder} alt="" />
         <h2>Shoulder Exercises</h2>
-        <p>Strengthen your arms and improve muscle endurance with targeted exercises that also enhance your posture. Our guided arm workouts help you achieve proper form, ensuring maximum results while minimizing the risk of injury. Perfect for all fitness levels, each routine focuses on posture correction to promote better overall body alignment.</p>
+        <p>Strengthening your shoulders is key to improving posture, enhancing upper body stability, and preventing injuries during everyday activities or intense training. Our shoulder workout routines are designed to target all three heads of the deltoid muscle, ensuring balanced development and improving your range of motion. Each exercise is tailored to correct posture and optimize shoulder alignment, making sure you maintain proper form while building strength. Whether you’re a beginner or a seasoned athlete, these workouts will help you build stronger, more resilient shoulders.</p>
       </div>
       
       <div className="exerciseRow2">
